@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 60px auto;
+            background: #f4f4f4;
+        }
+        h1  { text-align: center; color: #333; }
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            background: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover { background: #45a049; }
+        .result {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 24px;
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📩 Spam Detector</h1>
+    <form method="POST">
+        <textarea name="message" rows="5" placeholder="Type or paste a message here...">{{ message }}</textarea>
+        <button type="submit">Check Message</button>
+    </form>
+    {% if result %}
+        <div class="result">{{ result }}</div>
+    {% endif %}
+</body>
+</html>
