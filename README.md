@@ -38,3 +38,4 @@ Spam detection is used by every major email provider and messaging platform in t
 
 #OUTPUT
 
+<img width="1896" height="847" alt="Image" src="https://github.com/user-attachments/assets/afc6f979-21ee-48fa-8738-0a5030084e8e" />
